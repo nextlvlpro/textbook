@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Fill The Registration Form</p>
+
+<!-- registration-form starts here -->
+<!-- First Part used email, password, number, text input types to show diffrent form element inputs-->
+    <form id="registration-form" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name</br><input placeholder="Your Full Name" id="name" name="name-label" type="text" required /></label>
+            <label id="email-label" for="email">Email</br><input placeholder="Your Email ID" id="email" name="email-label" type="email" required /></label>
+            <label id="Age-label" for="Age">Age</br><input placeholder="Your Age" id="Age" name="Age-label" type="number" required /></label>
+            <label id="Phone Number-label" for="Phone Number">Phone Number</br><input placeholder="Your Phone Number" id="Phone Number" name="Phone Number-label" type="number" minlength="10" maxlength="10" required /></label>
+            <label id="password-label" for="age">Create a New Password</br><input placeholder="Enter a Strong Password" id="password" name="password-label" type="password" min="10" max="100" /></label>
+            <label id="password-label" for="age">Re-enter The New Password</br><input placeholder="Put your new password again here" id="password" name="password-label" type="password" min="10" max="100" /></label>
+        </fieldset>
+
+<!-- second part used radio type inout to select only one input-->
+        <fieldset>
+         <p class="form">How is your Experience in Programming?</p>
+            <label for="Good"><input id="Good" type="radio" name="exep" value="Good" class="button-inline"> Good</label>
+            <label for="very good"><input id="very good" type="radio" name="exep" value="Veru Good" class="button-inline"> Very Good</label>
+            <label for="average"><input id="average" type="radio" name="exep" value="Average" class="button-inline"> Average</label>
+            <label for="bad"><input id="bad" type="radio" name="exep" value="Bad" class="button-inline"> Bad</label>
+            <label for="very bad"><input id="very bad" type="radio" name="exep" value="Very Good" class="button-inline"> Very Bad</label>
+        </fieldset>
+
+<!-- third Part used checkboxes to select multiple items with text area-->
+        <fieldset>
+        <p class="form">What is Your Education</p>
+           <label for="High School"><input id="High School" name="Edu" type="checkbox" value="High School" class="button-inline" />High School</label>
+           <label for="Graduate"><input id="Graduate" name="Edu" type="checkbox" value="Graduate" class="button-inline" /> Graduate</label>
+           <label for="Post Graduate"><input id="Post Graduate" name="Edu" type="checkbox" value="Post Graduate" class="button-inline" />Post Graduate</label>
+           <label for="None"><input id="None" name="Edu" type="checkbox" value="None" class="button-inline" /> None of the above (Spacify Below)</label>
+           <textarea rows="1" cols="30" placeholder="Tell us your education if it is not mentioned above"></textarea>
+        </fieldset>
+
+<!-- Fourth Part used select and option form elemnts to show drop menu-->
+       <fieldset id="dropDownMenu">
+        <p class="form">What is your Weak Subject in Web Devlopment?</p>
+            <select id="dropdown">
+                <option id="">Only Select one</option>
+                <option id="1">Html</option>
+                <option id="2">CSS</option>
+                <option id="3">Java Script </option>
+            </select>
+        </fieldset>
+
+<!-- fifth Part used textarea to let user type more about themselfs-->
+        <fieldset>
+            Tell us more about yourself</br>
+            <textarea rows="5" cols="50" placeholder="About You...."></textarea>
+        </fieldset>
+
+<!-- sixth part added submit and reset button -->
+        <div id="end">
+            <input type="submit" id="submit">
+            <button id="reset"> <a href="/index.html">Reset</a></button>
+        </div>
+    </form>
+</body>
+</html>
